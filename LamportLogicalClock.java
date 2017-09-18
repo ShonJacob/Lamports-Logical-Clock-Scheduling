@@ -34,6 +34,7 @@ public class LamportLogicalClock
 		int terminatorp[]=new int[r];
 		int terminatore[]=new int[r];
 		//INPUTTING THE RELATIONS
+		//if e1->e2 , e1 is casually related to e2, i.e., the output of e2 is affected by output of e1
 		System.out.println("Enter the relationships in order,eg;1 2 , 3 1");
 		for(int i=0;i<r;i++)
 		{
@@ -107,3 +108,53 @@ public class LamportLogicalClock
 		s.close();
 	}
 }
+/*SAMPLE INPUT AND OUTPUT
+Enter the number of processes
+4
+Enter the number of events in each process
+4
+4
+2
+3
+Enter the highest number of events
+4
+Enter the number of relationships
+3
+Enter the relationships in order,eg;1 2 , 3 1
+Enter the process 
+4
+Enter the event 
+2
+is related to
+Enter the process 
+3
+Enter the event 
+1
+Enter the process 
+3
+Enter the event 
+1
+is related to
+Enter the process 
+2
+Enter the event 
+2
+Enter the process 
+2
+Enter the event 
+2
+is related to
+Enter the process 
+1
+Enter the event 
+1
+PROCESS : 1
+	5	6	7	8
+PROCESS : 2
+	1	4	5	6
+PROCESS : 3
+	3	4
+PROCESS : 4
+	1	2	3
+
+*/
