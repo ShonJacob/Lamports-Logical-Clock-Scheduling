@@ -76,7 +76,7 @@ public class LamportLogicalClock
 				timestamp[terminatorp[i]-1][terminatore[i]-1]=timestamp[originp[i]-1][origine[i]-1]+1;
 			}
 		}
-		//SCHEDULING WHEN RELATIONS ARE IN THE SAME PROCESS,i.e., SERIAL/CASUALLY RELATED EVENTS IN SAME PROCESS
+		//SCHEDULING WHEN RELATIONS ARE IN THE SAME PROCESS,i.e., SERIAL/CAUSALLY RELATED EVENTS IN SAME PROCESS
 		for(int i=0;i<p;i++)
 		{
 			for(int j=0;j<e[i];j++)
