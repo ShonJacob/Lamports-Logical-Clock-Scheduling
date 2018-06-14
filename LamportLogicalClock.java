@@ -34,7 +34,7 @@ public class LamportLogicalClock
 		int terminatorp[]=new int[r];
 		int terminatore[]=new int[r];
 		//INPUTTING THE RELATIONS
-		//if e1->e2 , e1 is casually related to e2, i.e., the output of e2 is affected by output of e1
+		//if e1->e2 , e1 is causally related to e2, i.e., the output of e2 is affected by output of e1
 		System.out.println("Enter the relationships in order,eg;1 2 , 3 1");
 		for(int i=0;i<r;i++)
 		{
